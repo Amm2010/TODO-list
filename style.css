@@ -1,0 +1,60 @@
+
+body{
+    color: white;
+    background-color: rgb(14, 13, 13);
+}
+
+#firstParagraph {
+    font-size: 50px;
+    font-style: italic;
+    transition: 0.6s;
+}
+
+#firstParagraph:hover {
+    font-weight: 50px;
+    margin-left: 50px;
+    cursor: default;
+    color: rgb(51, 49, 49);
+}
+
+#mainDiv {
+    width: 80%;
+    background-color: rgb(14, 13, 13); 
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+    border-radius: 15px;
+    border: double 10px ;
+    transition: 0.6s;
+}
+
+#mainDiv:hover {
+    border: solid rgb(0, 0, 0) 7px;
+    background-image: linear-gradient(rgb(27, 22, 22) , rgb(255, 255, 255));
+   color: black; 
+   max-width: 400px;
+   height: 270px;
+}
+
+input {
+    width: 70%;
+    max-width: 300px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+button {
+    width: 20%;
+    min-width:100px;
+    padding: 3px;
+    font-size: 15px;
+    margin: 5px;
+    border-radius: 5px;
+    border: solid black 4px;
+    transition: 1.5s;
+}
+
+button:hover {
+    border: none;
+}
