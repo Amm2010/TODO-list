@@ -16,6 +16,9 @@ function addNote() {
 }
 
 function showList(){
+
+    listDiv.innerHTML = "";
+
     for (let index = 0; index < notesArray.length; index++) {
         const element = notesArray[index];
         
@@ -23,6 +26,18 @@ function showList(){
 
         newLi.innerText = element;
 
-        listDiv.appendChild(newLi)
+            newLi.className = "theList";
+
+        listDiv.appendChild(newLi);
     }    
+}
+
+function hide() {
+    listDiv.innerHTML = "";
+}
+
+function deleteNote() {
+    notesArray = [];   
+    hide();
+    itemCount.innerText = notesArray.length;
 }
